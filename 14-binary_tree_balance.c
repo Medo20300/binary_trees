@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_height_b - Measures height of a binary tree for a bal tree
- * @tree: tree to go through
+ * @tree: tree to calculate
  * Return: the height
  */
 
@@ -28,7 +28,7 @@ size_t binary_tree_height_b(const binary_tree_t *tree)
 
 /**
  * binary_tree_balance - Measures balance factor of a binary tree
- * @tree: tree to go through
+ * @tree: tree to calculate its bf
  * Return: balanced factor
  */
 
