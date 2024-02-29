@@ -57,7 +57,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 size_t binary_tree_height(const binary_tree_t *tree);
-
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 /* helper to task 9 */
 size_t max_size_t(size_t a, size_t b);
 
@@ -110,7 +110,12 @@ avl_t *avl_insert(avl_t **tree, int value);
 avl_t *array_to_avl(int *array, size_t size);
 avl_t *avl_remove(avl_t *root, int value);
 avl_t *sorted_array_to_avl(int *array, size_t size);
-
+size_t max_size_t(size_t a, size_t b);
+size_t binary_tree_height(const binary_tree_t *tree);
+size_t binary_tree_nodes(const binary_tree_t *tree);
+int binary_tree_is_perfect(const binary_tree_t *tree);
+heap_t *binary_tree_complete_insert(heap_t *tree, int value);
+heap_t *heap_insert(heap_t **root, int value);
 /* helpers to task 30 */
 avl_data_t BST_is_AVL_balanced(const binary_tree_t *tree);
 int tree_is_BST(const binary_tree_t *tree, int *prev);
@@ -121,5 +126,6 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
-
+size_t tree_size(const binary_tree_t *tree);
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
 #endif /* BINARY_TREES_H */

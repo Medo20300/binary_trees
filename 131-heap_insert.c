@@ -1,5 +1,6 @@
 #include "binary_trees.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * max_size_t - finds larger of two size_t values
  * @a: first value to compare
