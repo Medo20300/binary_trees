@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "binary_trees.h"
-
+#include <stdio.h>
 /**
  * main - Entry point
  *
