@@ -5,7 +5,7 @@
  * Return: the balance factor of the binary tree
 */
 int binary_tree_balance(const binary_tree_t *tree)
-{ 	
+{
 	int l = 0, r = 0;
 
 	if (tree == NULL)
@@ -20,9 +20,9 @@ int binary_tree_balance(const binary_tree_t *tree)
 		l++;
 	}
 	if (tree->right)
-	{  
+	{
 		r = binary_tree_balance(tree->right);
-		r++;    
+		r++;
 	}
 	return (l - r);
 	}
